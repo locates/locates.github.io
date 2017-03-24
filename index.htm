@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>locate.name: a free, simple, client-less dynamic dns alternative</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="A free, simple, client-less dynamic DNS alternative that uses the DNS protocol itself as the client mechanism to provide unique benefits." />
+	<meta name="keywords" content="dynamic dns, dyndns" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="theme-color" content="#333333" />
+	<link id="page_favicon" href="img/favicon.ico" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" href="css/locate.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+	<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/locate.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="logo">
+				<span class="icon fa-globe"></span>
+			</div>
+			<div class="content">
+				<div class="inner">
+					<svg id="logo" xmlns="http://www.w3.org/2000/svg" width="18.000000em" height="4.000000em" viewBox="0 0 900.000000 201.000000" preserveAspectRatio="xMidYMid meet">
+						<title>locate.name</title>
+						<g transform="translate(0.000000,201.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="#000000" stroke-width="0">
+							<path opacity="1.0" d="M351 1516 c-8 -9 -10 -144 -9 -482 l3 -469 95 -3 c80 -2 97 0 107 15 10 13 13 120 13 468 0 530 11 485 -117 485 -56 0 -84 -4 -92 -14z"><animate attributeName="opacity" values="0;1" dur="0.25s" begin="0.5s" repeatCount="1" /></path>
+							<path opacity="1.0" d="M960 1311 c-60 -12 -141 -63 -192 -121 -73 -81 -103 -171 -95 -290 14 -224 226 -390 446 -350 218 40 362 242 321 449 -25 131 -96 226 -208 281 -57 28 -80 33 -152 36 -47 2 -101 0 -120 -5z m151 -203 c71 -24 109 -87 109 -181 0 -55 -4 -70 -30 -105 -36 -51 -79 -74 -135 -74 -56 0 -99 23 -135 74 -26 35 -30 50 -30 105 0 93 30 143 105 178 37 18 72 18 116 3z"><animate attributeName="opacity" values="0;1" dur="0.25s" begin="0.6s" repeatCount="1" /></path>
+							<path opacity="1.0" d="M1840 1311 c-103 -23 -204 -105 -255 -207 -28 -55 -30 -67 -30 -169 0 -101 2 -115 29 -170 75 -153 246 -244 403 -215 101 18 193 67 193 103 0 22 -49 104 -80 132 -18 16 -21 16 -77 -11 -66 -32 -114 -34 -162 -9 -48 24 -65 44 -84 93 -22 56 -21 100 3 154 21 49 39 68 87 92 49 25 109 18 180 -22 30 -17 47 -15 65 6 23 25 68 108 68 125 0 19 -47 59 -94 81 -45 20 -189 30 -246 17z"><animate attributeName="opacity" values="0;1" dur="0.25s" begin="0.7s" repeatCount="1" /></path>
+							<path opacity="1.0" d="M2560 1310 c-100 -20 -203 -103 -255 -206 -28 -55 -30 -67 -30 -169 0 -100 3 -115 28 -166 57 -118 154 -192 284 -219 77 -16 137 -1 193 47 21 18 43 33 48 33 6 0 19 -16 31 -35 l20 -35 80 0 c118 0 111 -22 111 370 0 242 -4 331 -13 350 -12 23 -18 25 -82 25 l-70 0 -24 -47 -23 -48 -50 45 c-68 61 -141 78 -248 55z m162 -209 c51 -22 81 -53 103 -103 27 -66 12 -143 -37 -195 -12 -13 -46 -32 -75 -43 -61 -23 -99 -18 -160 19 -66 41 -93 162 -53 239 49 93 130 123 222 83z"><animate attributeName="opacity" values="0;1" dur="0.25s" begin="0.8s" repeatCount="1" /></path>
+							<path opacity="1.0" d="M3390 1501 c-25 -9 -64 -24 -87 -34 l-43 -17 0 -74 c0 -80 -7 -92 -55 -98 l-30 -3 -3 -83 c-3 -93 3 -108 52 -120 l31 -8 5 -250 5 -249 103 -3 c56 -1 103 -1 104 0 1 2 5 116 8 253 l5 250 50 3 c74 5 95 28 95 109 0 91 -9 103 -73 103 -29 0 -58 5 -65 12 -8 8 -12 47 -12 108 0 93 -8 122 -34 119 -6 -1 -31 -9 -56 -18z"><animate attributeName="opacity" values="0;1" dur="0.25s" begin="0.9s" repeatCount="1" /></path>
+							<path opacity="1.0" d="M4000 1311 c-108 -25 -205 -104 -256 -206 -27 -55 -29 -69 -29 -170 0 -101 2 -115 28 -168 92 -186 321 -271 512 -190 56 24 125 81 125 104 0 20 -61 93 -91 110 -13 7 -30 1 -69 -23 -44 -27 -59 -31 -123 -32 -79 0 -111 14 -148 66 -40 56 -33 58 218 58 255 0 267 3 279 64 8 44 -12 136 -42 195 -29 58 -104 131 -171 165 -55 27 -171 41 -233 27z m160 -198 c46 -32 63 -52 57 -67 -5 -13 -28 -16 -132 -16 -108 0 -127 2 -132 17 -5 11 5 27 32 50 34 29 45 33 94 33 37 0 65 -6 81 -17z"><animate attributeName="opacity" values="0;1" dur="0.25s" begin="1.0s" repeatCount="1" /></path>
+							<path opacity="0.5" d="M4587 743 c-4 -3 -7 -46 -7 -95 l0 -88 95 0 c111 0 115 4 115 99 0 83 -10 91 -114 91 -45 0 -86 -3 -89 -7z"><animateMotion path="M 0 0 V 100 Z" dur="0.20s" begin="1.1s" repeatCount="1" /><animate attributeName="opacity" values="0;0.5" dur="1.0s" begin="1.35s" repeatCount="1" /></path>
+							<path opacity="0.75" d="M5276 1309 c-35 -8 -106 -52 -114 -70 -1 -3 -9 -15 -17 -25 -13 -18 -15 -16 -34 28 -24 56 -43 68 -109 68 -83 0 -82 6 -82 -380 0 -209 4 -338 10 -351 9 -17 22 -19 103 -19 59 0 97 4 105 12 9 9 12 72 12 220 0 224 3 239 53 287 36 33 111 34 154 1 56 -41 64 -78 63 -301 -1 -109 1 -203 5 -209 8 -13 192 -13 200 0 3 6 6 123 5 260 0 240 -2 253 -24 303 -47 106 -129 169 -236 180 -30 3 -73 1 -94 -4z"><animate attributeName="opacity" values="0;0.75" dur="0.25s" begin="1.0s" repeatCount="1" /></path>
+							<path opacity="0.75" d="M6070 1310 c-100 -20 -198 -99 -252 -202 -31 -60 -33 -68 -33 -173 0 -100 3 -115 28 -166 57 -118 154 -192 284 -219 77 -16 137 -1 193 47 21 18 43 33 48 33 6 0 19 -16 31 -35 l20 -35 80 0 c118 0 111 -22 111 370 0 242 -4 331 -13 350 -12 23 -18 25 -82 25 l-70 0 -24 -47 -23 -48 -50 45 c-68 61 -141 78 -248 55z m162 -209 c51 -22 81 -53 103 -103 27 -66 12 -143 -37 -195 -12 -13 -46 -32 -75 -43 -61 -23 -99 -18 -160 19 -66 41 -93 162 -53 239 49 93 130 123 222 83z"><animate attributeName="opacity" values="0;0.75" dur="0.25s" begin="0.80s" repeatCount="1" /></path>
+							<path opacity="0.75" d="M7046 1313 c-48 -7 -101 -46 -125 -91 -15 -28 -27 -22 -34 17 -10 49 -40 71 -97 71 -37 0 -55 -5 -70 -20 -19 -19 -20 -33 -20 -362 0 -189 4 -349 8 -356 6 -9 35 -12 108 -10 l99 3 5 220 c5 233 9 254 59 299 33 30 105 26 139 -8 l27 -26 5 -235 c3 -149 9 -238 16 -245 7 -7 47 -10 105 -8 l94 3 5 225 c6 254 12 279 77 306 46 20 86 10 118 -28 25 -29 25 -30 26 -241 1 -117 4 -223 8 -237 7 -25 8 -25 111 -25 l105 0 3 244 c3 284 -6 332 -79 414 -56 65 -115 90 -204 90 -77 -1 -127 -19 -178 -67 -35 -33 -55 -33 -86 0 -48 51 -143 79 -225 67z"><animate attributeName="opacity" values="0;0.75" dur="0.25s" begin="0.65s" repeatCount="1" /></path>
+							<path opacity="0.75" d="M8250 1311 c-102 -22 -204 -106 -256 -211 -25 -50 -28 -65 -28 -165 0 -130 15 -172 94 -258 92 -101 228 -148 360 -126 72 13 104 27 167 73 58 43 57 68 -7 131 -43 43 -53 48 -68 37 -73 -51 -153 -71 -220 -53 -47 13 -115 74 -110 99 3 15 28 18 246 22 201 4 244 8 253 20 5 8 8 53 6 100 -4 104 -29 161 -100 231 -67 65 -137 97 -229 103 -40 3 -89 1 -108 -3z m184 -216 c63 -56 49 -65 -99 -65 -108 0 -127 2 -132 17 -4 11 5 26 33 50 35 29 46 33 99 33 54 0 64 -3 99 -35z"><animate attributeName="opacity" values="0;0.75" dur="0.25s" begin="0.5s" repeatCount="1" /></path>
+						</g>
+					</svg>
+					<p>A free, simple, client-less <a href="https://wikipedia.org/wiki/Dynamic_DNS" target="_blank">dynamic dns</a> alternative</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#start">Start</a></li>
+					<li><a href="#api">API</a></li>
+					<li><a href="#tool">API Tool</a></li>
+					<li><a href="#usage">Usage</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="main">
+			<article id="start">
+				<h2 class="major">Start</h2>
+				<p><a href="//locate.name">Locate.name</a> is a <a href="https://wikipedia.org/wiki/Dynamic_DNS" target="_blank">Dynamic DNS</a> (<i>DynDNS</i>) alternative that uses a different approach than has been traditionally done in the past by using the DNS protocol itself as the client mechanism. This approach bypasses most firewall configurations and removes the need for any additional software to update your IP, making it much easier to deploy and embed while adding no overhead to your system.</p>
+				<p>To use this service you will need to use our simple web-based <a href="#api">API</a> to create a username that will represent a subdomain on <a href="//locate.name">locate.name</a> (<i>ex. username.locate.name</i>). An additional objective of this service is for it to be anonymous in its nature, so no (<i>e-mail</i>) verification is done, this means <b>if you forget your password you will never recover your subdomain</b>.</p>
+				<p>Once you have created your subdomain you can navigate to the <a href="#usage">usage</a> section to configure your systems to update or continue reading the no frills quick start guide below.</p>
+				<h3 class="major">Quick Start</h3>
+				<p>This is for those who just want to get up and running with the most common use case, a UNIX-based environment with an IPv4 IP. The following steps expect you to replace <b><i>MYSUBDOMAIN</i></b>, <b><i>MYPASSWORD</i></b>, and <b><i>XXXXXXXXXXXXXXXX</i></b> (<i>example passcode</i>) with your own values in all steps.</p>
+				<h3>Step #1: Create a new subdomain</h3>
+				<pre><code>$ <span>curl https://<b><i>MYSUBDOMAIN</i></b>:<b><i>MYPASSWORD</i></b>@api.locate.name/create</span>
+201 Created: Your initial passcode is: <b><i>XXXXXXXXXXXXXXXX</i></b></code></pre>
+				<blockquote>Assuming a successful response like above, copy the passcode returned to use in steps #2 and #3.</blockquote>
+				<h3>Step #2: Verify your subdomain updates properly</h3>
+				<pre><code>$ <span>nslookup -nosearch -type=A <b><i>XXXXXXXXXXXXXXXX</i></b>.<b><i>MYSUBDOMAIN</i></b>.locate.name ping.locate.name</span>
+Server:         ping.locate.name
+Address:        XXX.XXX.XXX.XXX#53
+
+Name:   xxxxxxxxxxxxxxxx.mysubdomain.locate.name
+Address: XXX.XXX.XXX.XXX</code></pre>
+				<blockquote>Assuming a successful response like above, you should see your public-facing IP returned.</blockquote>
+				<h3>Step #3: Add cronjob to keep your IP updated</h3>
+				<pre class="pre-wordwrap"><code>$ <span>(crontab -l; echo "*/5 * * * * nslookup -nosearch -type=A <b><i>XXXXXXXXXXXXXXXX</i></b>.<b><i>MYSUBDOMAIN</i></b>.locate.name ping.locate.name") | crontab -</span></code></pre>
+				<blockquote>This is the same command as in step #2, but now will run every 5 minutes to keep your IP current.</blockquote>
+				<h3>Step #4: Use your subdomain anywhere (example)</h3>
+				<pre><code>$ <span>ssh me@<b><i>MYSUBDOMAIN</i></b>.locate.name</span></code></pre>
+				<h3 class="major alert">Security Advisory</h3>
+				<p class="alert">By design, this service is at risk of Man-in-the-middle (<i>MITM</i>) attacks. This is due to the fact the passcode is transmitted in clear text over DNS, while it's unlikely to occur it is advised you have data like SSH keys saved in advance to detect such an event.  If you are interested in additional steps to help mitigate MITM risks please view the &quot;advanced security&quot; section inside the <a href="#usage">usage</a> section.</p>
+			</article>
+			<article id="api">
+				<h2 class="major">API</h2>
+				<p>The <a href="//locate.name">locate.name</a> API is intended to be used for account (<i>subdomain</i>) creation and general maintenance. For most users this will be a one-time event to create your subdomain and get your passcode, from that point you will want to view the <a href="#usage">usage</a>.</p>
+				<p>Two pieces of information are required for all API requests, a <b>subdomain</b> (<i>aka. username</i>) and a <b>password</b>. This information is used in conjunction with <a href="https://wikipedia.org/wiki/Basic_access_authentication" target="_blank">Basic HTTP access authentication</a>, a universally supported mechanism in all HTTP clients and browsers.</p>
+				<p>All subdomains are created on a first-come, first-served basis and are yours for the life of this service. It's important to note there is no password recovery mechanism, so <b>if you forget your password you will never recover your subdomain</b>.</p>
+				<p>The subdomain you choose is required to be 6 to 16 alphanumeric characters, it may contain dashes as long as they are not at the beginning or end. The password must also be 16 characters or less.</p>
+				<p>For the sake of simplicity this documentation uses <b>curl</b> (<i>a common command-line HTTP client</i>) to perform all API requests, you may use any number of other clients (<i>or even browsers</i>).</p>
+				<h3>Create a subdomain</h3>
+				<pre><code>curl https://<b><i>SUBDOMAIN</i></b>:<b><i>PASSWORD</i></b>@api.locate.name/create</code></pre>
+				<blockquote>If successful, the response will be a 2XX HTTP Code and contain your <b>passcode</b> (<i>also included in the &quot;X-Passcode&quot; header</i>). If not, you will see a HTTP error code and a description of the error condition.</blockquote>
+				<h3>Get the passcode for a subdomain</h3>
+				<pre><code>curl https://<b><i>SUBDOMAIN</i></b>:<b><i>PASSWORD</i></b>@api.locate.name/passcode</code></pre>
+				<blockquote>If successful, the response will be a 2XX HTTP Code and contain your <b>passcode</b> (<i>also included in the &quot;X-Passcode&quot; header</i>). If not, you will see a HTTP error code and a description of the error condition.</blockquote>
+				<h3>Generate a new passcode for a subdomain</h3>
+				<pre><code>curl https://<b><i>SUBDOMAIN</i></b>:<b><i>PASSWORD</i></b>@api.locate.name/passcode/new</code></pre>
+				<blockquote>If successful, the response will be a 2XX HTTP Code and contain your new <b>passcode</b> (<i>also included in the &quot;X-Passcode&quot; header</i>). If not, you will see a HTTP error code and a description of the error condition.</blockquote>
+				<h3>Delete a subdomain</h3>
+				<pre><code>curl https://<b><i>SUBDOMAIN</i></b>:<b><i>PASSWORD</i></b>@api.locate.name/delete</code></pre>
+				<blockquote>If successful, the response will be a 2XX HTTP Code and your subdomain will be deleted. If not, you will see a HTTP error code and a description of the error condition.</blockquote>
+			</article>
+			<article id="tool">
+				<h2 class="major">API Tool</h2>
+				<p>This GUI tool is an optional method to execute <a href="#api">API</a> calls from your current web browser, instead of <b>curl</b> or similar command-line utilities. If you're using a command-line utility already you should skip this and view the <a href="#usage">usage</a> section. The tool can be found by going to <a href="https://api.locate.name" target="_blank">https://api.locate.name</a> in your browser, or using the framed version below. </p>
+				<div class="field">
+					<label>https://api.locate.name:</label>
+					<iframe name="iframe" id="iframe" height="800" src="https://api.locate.name"> </iframe>
+				</div>
+			</article>
+			<article id="usage">
+				<h2 class="major">Usage</h2>
+				<section>
+					<p>After you've created your subdomain using the <a href="#api">API</a> you can update your subdomain's IP to the IP of the computer you're using with one of the following common system commands (<i><b>nslookup</b> or <b>host</b></i>). Make sure to replace <b>PASSCODE</b> (<i>not password!</i>) and <b>SUBDOMAIN</b> with your own values.</p>
+					<h3>IPv4:</h3>
+					<h6>Windows / OSX / UNIX:</h6>
+					<pre><code>nslookup -nosearch -type=A <b><i>PASSCODE</i></b>.<b><i>SUBDOMAIN</i></b>.locate.name ping.locate.name</code></pre>
+					<h6>Linux / OSX / UNIX:</h6>
+					<pre><code>host -t A <b><i>PASSCODE</i></b>.<b><i>SUBDOMAIN</i></b>.locate.name ping.locate.name</code></pre>
+					<blockquote>If successful, your current IP will be returned. If not, an empty response or DNS error code will be returned.</blockquote>
+					<h3>IPv6:</h3>
+					<h6>Windows / Linux / OSX / UNIX:</h6>
+					<pre><code>nslookup -nosearch -type=AAAA <b><i>PASSCODE</i></b>.<b><i>SUBDOMAIN</i></b>.locate.name ping6.locate.name</code></pre>
+					<h6>Linux / OSX / UNIX:</h6>
+					<pre><code>host -t AAAA <b><i>PASSCODE</i></b>.<b><i>SUBDOMAIN</i></b>.locate.name ping6.locate.name</code></pre>
+					<blockquote>If successful, your current IP will be returned. If not, an empty response or DNS error code will be returned.</blockquote>
+					<p>Once the command(s) above are executed successfully your subdomain (<i>ex. <b>subdomain</b>.locate.name</i>) will resolve to the IP the command was originally executed on.</p>
+					<h3 class="major">Automatic updates</h3>
+					<p>The final and most important step is to schedule a task to keep the IP up to date using <b>crontab</b> for UNIX-based OSes, or <b>schtasks</b> if you're using Windows.</p>
+					<h4>UNIX-based:</h4>
+					<pre class="pre-wordwrap"><code>(crontab -l; echo "*/5 * * * * nslookup -nosearch -type=A <b><i>PASSCODE</i></b>.<b><i>SUBDOMAIN</i></b>.locate.name ping.locate.name") | crontab -</code></pre>
+					<h4>Windows:</h4>
+					<p>If you have administrator (<b>SYSTEM</b>) access on the Windows machine, start cmd.exe with "<b>Run as administrator</b>" for the following command.</p>
+					<pre class="pre-wordwrap"><code>schtasks /create /tn "Locate.name IP Updater" /ru SYSTEM /tr "nslookup -nosearch -type=A <b><i>PASSCODE</i></b>.<b><i>SUBDOMAIN</i></b>.locate.name ping.locate.name" /sc minute /mo 5</code></pre>
+					<p>If you don't have administrator access you can run it as a normal user, <b>however a command window will momentarily pop up every time it is run and will likely drive you insane</b>. As such, this will only update once an hour for this example.</p>
+					<pre class="pre-wordwrap"><code>schtasks /create /tn "Locate.name IP Updater" /tr "nslookup -nosearch -type=A <b><i>PASSCODE</i></b>.<b><i>SUBDOMAIN</i></b>.locate.name ping.locate.name" /sc hourly</code></pre>
+					<h3 class="major">Update verification (optional)</h3>
+					<p>To verify your (<i>automatic</i>) updates are working consistently you may do a <b>TXT</b> lookup on your subdomain to show when the last update occurred.  For example:</p>
+					<pre><code>nslookup -nosearch -type=TXT <b><i>SUBDOMAIN</i></b>.locate.name ping.locate.name</code></pre>
+					<blockquote>If successful, the response would look something like &quot;<b>updated: 2000-01-01 00:00:00 -0400 (~ seconds ago)</b>&quot;</blockquote>
+					<h3 class="major">Advanced security (optional)</h3>
+					<p>By design, this service is at risk of Man-in-the-middle (<i>MITM</i>) attacks. This is due to the fact the passcode is transmitted in clear text over DNS, while it's unlikely to occur it is advised you have data like SSH keys saved in advance to detect such an event.</p>
+					<p>An additional layer of security exists to help mitigate some (<i>but not all</i>) aspects of MITM attacks in the form of <b>passcode hash windows</b>.  These <b>passcode hash windows</b> work by creating a hash that includes your current passcode and an identifier based on the current time.</p>
+					<p>Once you create one of these hashed passcodes you can use it in place of your normal passcode, thereby never transmitting your real passcode over the internet and making the transmitted passcode useless after the time window (<i>1000 seconds</i>) is up.</p>
+					<p>Both MD5 and SHA1 hash algorithms are supported, using the pseudo-code logic below:</p>
+					<h4>MD5:</h4>
+					<pre class="pre-wordwrap"><code>MD5_PASSCODE = HEX(
+  MD5SUM(
+    PASSCODE + &quot;:&quot; + FLOOR(CURRENT_UNIX_TIME_SECS / 1000)
+  )
+)</code></pre>
+					<h4>SHA1:</h4>
+<pre class="pre-wordwrap"><code>SHA1_PASSCODE = HEX(
+  SHA1SUM(
+    PASSCODE + &quot;:&quot; + FLOOR(CURRENT_UNIX_TIME_SECS / 1000)
+  )
+)</code></pre>
+					<blockquote>Now <b>MD5_PASSCODE</b> and/or <b>SHA1_PASSCODE</b> can be used in place of <b>PASSCODE</b>.</blockquote>
+					<p>The following is a (<i>UNIX-based</i>) shell implementation of the pseudo-code above.</p>
+					<h4>MD5:</h4>
+					<pre class="pre-wordwrap"><code>echo -n &quot;<b>PASSCODE</b>:$(expr $(date +%s) / 1000)&quot; | md5sum</code></pre>
+					<h4>SHA1:</h4>
+					<pre class="pre-wordwrap"><code>echo -n &quot;<b>PASSCODE</b>:$(expr $(date +%s) / 1000)&quot; | sha1sum</code></pre>
+					<p>As a final (<i>UNIX-based</i>) example, the following one-liner will update your (IPv4) IP using a MD5 hash of your passcode, assuming you set <b>YOUR_SUDBDOMAIN</b> and <b>YOUR_PASSCODE</b> accordingly. </p>
+					<pre class="pre-wordwrap"><code>export SD="<b><i>YOUR_SUDBDOMAIN</i></b>" PC="<b><i>YOUR_PASSCODE</i></b>" &amp;&amp; nslookup -nosearch -type=A $(echo -n "$PC:$(expr $(date +%s) / 1000)" | md5sum | awk '{print $1".'$SD'.locate.name"}') ping.locate.name</code></pre>
+					<h3 class="major">&quot;What is my IP?&quot; support (optional)</h3>
+					<p>For situations where you simply want to know the public IP of the system you're currently on, with no account needed, you can use the special subdomain <b>i.locate.name</b> to do so:</p>
+					<h3>IPv4:</h3>
+					<h6>Windows / OSX / UNIX:</h6>
+					<pre><code>nslookup -nosearch -type=A i.locate.name ping.locate.name</code></pre>
+					<h6>Linux / OSX / UNIX:</h6>
+					<pre><code>host -t A i.locate.name ping.locate.name</code></pre>
+					<h3>IPv6:</h3>
+					<h6>Windows / Linux / OSX / UNIX:</h6>
+					<pre><code>nslookup -nosearch -type=AAAA i.locate.name ping6.locate.name</code></pre>
+					<h6>Linux / OSX / UNIX:</h6>
+					<pre><code>host -t AAAA i.locate.name ping6.locate.name</code></pre>
+				</section>
+			</article>
+		</div>
+		<footer id="footer">
+			<p class="copyright">[ <a href="//locate.name">locate.name</a> ]</p>
+		</footer>
+	</div>
+	<div id="bg"></div>
+</body>
+</html>
