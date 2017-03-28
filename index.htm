@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>locate.name: a free, simple, client-less dynamic dns alternative</title>
+	<title>locate.name: DynDNS over DNS</title>
 	<meta charset="utf-8" />
 	<meta name="description" content="A free, simple, client-less dynamic DNS alternative that uses the DNS protocol itself as the client mechanism to provide unique benefits." />
 	<meta name="keywords" content="dynamic dns, dyndns" />
@@ -57,7 +57,7 @@
 				<h2 class="major">Start</h2>
 				<p><a href="//locate.name">Locate.name</a> is a <a href="https://wikipedia.org/wiki/Dynamic_DNS" target="_blank">Dynamic DNS</a> (<i>DynDNS</i>) alternative that uses a different approach than has been traditionally done in the past by using the DNS protocol itself as the client mechanism. This approach bypasses most firewall configurations and removes the need for any additional software to update your IP, making it much easier to deploy and embed while adding no overhead to your system.</p>
 				<p>To use this service you will need to use our simple web-based <a href="#api">API</a> to create a username that will represent a subdomain on <a href="//locate.name">locate.name</a> (<i>ex. username.locate.name</i>). An additional objective of this service is for it to be anonymous in its nature, so no (<i>e-mail</i>) verification is done, this means <b>if you forget your password you will never recover your subdomain</b>.</p>
-				<p>Once you have created your subdomain you can navigate to the <a href="#usage">usage</a> section to configure your systems to update or continue reading the no frills quick start guide below.</p>
+				<p>Once you have created your subdomain you can navigate to the <a href="#usage">usage</a> section to gain a more detailed understanding and configure your systems to update, or continue reading the no frills <b>quick start</b> &amp; <b>automatic setup</b> guides below.</p>
 				<h3 class="major">Quick Start</h3>
 				<p>This is for those who just want to get up and running with the most common use case, a UNIX-based environment with an IPv4 IP. The following steps expect you to replace <b><i>MYSUBDOMAIN</i></b>, <b><i>MYPASSWORD</i></b>, and <b><i>XXXXXXXXXXXXXXXX</i></b> (<i>example passcode</i>) with your own values in all steps.</p>
 				<h3>Step #1: Create a new subdomain</h3>
@@ -77,7 +77,14 @@ Address: XXX.XXX.XXX.XXX</code></pre>
 				<blockquote>This is the same command as in step #2, but now will run every 5 minutes to keep your IP current.</blockquote>
 				<h3>Step #4: Use your subdomain anywhere (example)</h3>
 				<pre><code>$ <span>ssh me@<b><i>MYSUBDOMAIN</i></b>.locate.name</span></code></pre>
-				<h3 class="major alert">Security Advisory</h3>
+				<h3 class="major">Automatic setup</h3>
+				<p>If you understand and are comfortable with the steps in <b>quick start</b> guide above you can automatically accomplish the same (<i>and more</i>) using one of the following scripts. </p>
+				<h6>UNIX-Based: <a href="locate-setup.sh">locate-setup.sh</a> (<i>Shell</i>)</h6>
+				<pre><code>$ <span>sh ./locate-setup.sh</span></code></pre>
+				<h6>Windows: <a href="locate-setup.ps1">locate-setup.ps1</a> (<i>PowerScript</i>)</h6>
+				<pre><code>C:\&gt; <span>powershell -ExecutionPolicy Bypass &quot;C:\path\to\locate-setup.ps1&quot;</span></code></pre>
+				<blockquote>You may also be able to double-click on the file to execute it, but the default powerscript security policy will not allow it.</blockquote>
+				<h3 class="major alert">Security advisory</h3>
 				<p class="alert">By design, this service is at risk of Man-in-the-middle (<i>MITM</i>) attacks. This is due to the fact the passcode is transmitted in clear text over DNS, while it's unlikely to occur it is advised you have data like SSH keys saved in advance to detect such an event.  If you are interested in additional steps to help mitigate MITM risks please view the &quot;advanced security&quot; section inside the <a href="#usage">usage</a> section.</p>
 			</article>
 			<article id="api">
