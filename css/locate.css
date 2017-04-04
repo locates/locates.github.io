@@ -1572,7 +1572,7 @@
 
 #logo { padding-right:0.5rem; }
 .inner, .logo, #header nav ul { background-color:rgba(27, 31, 34, 0.85); }
-.alert { color:#f00; }
+.alert { color:#f00; font-weight:bold; }
 .pre-wordwrap {
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
